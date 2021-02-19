@@ -12,8 +12,10 @@
 
   <script>
     var todos = ['Item 1', 'Item 2', 'Item 3'];
-    todos.push('Item 4');
-    todos[0] = 'Item 1 New';
+    console.log(todos); // Display todos
+    todos.push('Item 4'); // Add another todo
+    todos[0] = 'Item 1 New'; // Edit todo
+    todos.splice(0, 1) // Delete todo
 
     console.log(todos);
   </script>
