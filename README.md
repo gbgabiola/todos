@@ -4,4 +4,4 @@
 
 - [x] It should have a function to add todo
 - [x] It should have a function to edit todo
-- [ ] It should have a function to remove todo
+- [x] It should have a function to remove todo
