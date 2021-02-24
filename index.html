@@ -13,14 +13,20 @@
   <script>
     var todos = ['Item 1', 'Item 2', 'Item 3'];
 
+    // Add function
     function add(todo) {
       todos.push(todo);
       console.log(todos)
     }
+    // add('Item 4');
 
-    add('Item 4');
+    // Edit function
+    function edit(index, newValue) {
+      todos[index] = newValue;
+      console.log(todos)
+    }
+    // edit(0, 'Item 1 updated');
 
-    // todos[0] = 'Item 1 New'; // Edit todo
     // todos.splice(0, 1) // Delete todo
   </script>
 </body>
