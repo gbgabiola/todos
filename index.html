@@ -19,9 +19,8 @@
 
     console.log(todos);
 
-    // Rewrite so that argument passed in is saved to a property of an object
-    function add(todo) {
-      todos.push(todo);
+    function add(newTodo) {
+      todos.push({ todo: newTodo, isComplete: false });
       console.log(todos)
     }
 
