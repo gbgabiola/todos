@@ -24,9 +24,8 @@
       console.log(todos)
     }
 
-    // Rewrite so that second argument is saved to property of an object at `index`
-    function edit(index, newValue) {
-      todos[index] = newValue;
+    function edit(index, newTodoValue) {
+      todos[index].todo = newTodoValue;
       console.log(todos)
     }
 
