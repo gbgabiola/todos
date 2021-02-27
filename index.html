@@ -11,29 +11,26 @@
 <body>
 
   <script>
+    // Rewrite using objects instead of strings
     var todos = ['Item 1', 'Item 2', 'Item 3'];
+    console.log(todos);
 
-    // Add function
+    // Rewrite so that argument passed in is saved to a property of an object
     function add(todo) {
       todos.push(todo);
       console.log(todos)
     }
-    // add('Item 4');
 
-    // Edit function
+    // Rewrite so that second argument is saved to property of an object at `index`
     function edit(index, newValue) {
       todos[index] = newValue;
       console.log(todos)
     }
-    // edit(0, 'Item 1 updated');
 
-    // Remove function
     function remove(index) {
       todos.splice(index, 1);
       console.log(todos);
     }
-    // remove(1);
-
   </script>
 </body>
 

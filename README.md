@@ -1,7 +1,8 @@
 # Requirements
 
-## Version 2
+## Version 3
 
-- [x] It should have a function to add todo
-- [x] It should have a function to edit todo
-- [x] It should have a function to remove todo
+- [ ] Initialize the todos variable with objects
+- [ ] Add function should add objects
+- [ ] Edit function should edit objects
+- [ ] It should have a function to toggle a todo
