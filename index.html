@@ -11,29 +11,28 @@
 <body>
 
   <script>
-    var todos = ['Item 1', 'Item 2', 'Item 3'];
+    var todos = [
+      { todo: 'Item 1', isComplete: false },
+      { todo: 'Item 2', isComplete: false },
+      { todo: 'Item 3', isComplete: false }
+    ];
 
-    // Add function
-    function add(todo) {
-      todos.push(todo);
+    console.log(todos);
+
+    function add(newTodo) {
+      todos.push({ todo: newTodo, isComplete: false });
       console.log(todos)
     }
-    // add('Item 4');
 
-    // Edit function
-    function edit(index, newValue) {
-      todos[index] = newValue;
+    function edit(index, newTodoValue) {
+      todos[index].todo = newTodoValue;
       console.log(todos)
     }
-    // edit(0, 'Item 1 updated');
 
-    // Remove function
     function remove(index) {
       todos.splice(index, 1);
       console.log(todos);
     }
-    // remove(1);
-
   </script>
 </body>
 
