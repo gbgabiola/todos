@@ -2,7 +2,7 @@
 
 ## Version 4
 
-- [ ] It should have a function to toggle a todo
+- [x] It should have a function to toggle a todo
 
 
 ## Version 3
