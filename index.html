@@ -33,6 +33,15 @@
       todos.splice(index, 1);
       console.log(todos);
     }
+
+    function toggle(index) {
+      if (!todos[index].isComplete) {
+        todos[index].isComplete = true;
+      } else {
+        todos[index].isComplete = false;
+      }
+      console.log(todos);
+    }
   </script>
 </body>
 
