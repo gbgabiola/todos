@@ -1,5 +1,13 @@
 # Requirements
 
+
+## Version
+
+- [ ] It should have a function for displaying todos
+- [ ] `displayTodos` should show the `todo` property
+- [ ] `displayTodos` should show the `isComplete` property
+
+
 ## Version 4
 
 - [x] It should have a function to toggle a todo
