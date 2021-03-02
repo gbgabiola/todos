@@ -4,8 +4,7 @@
 ## Version
 
 - [x] It should have a function for displaying todos
-- [ ] `displayTodos` should show the `todo` property
-- [ ] `displayTodos` should show the `isComplete` property
+- [x] `displayTodos` should show the `todo` property and `isComplete` property
 
 
 ## Version 4
