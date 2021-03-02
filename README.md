@@ -3,7 +3,7 @@
 
 ## Version
 
-- [ ] It should have a function for displaying todos
+- [x] It should have a function for displaying todos
 - [ ] `displayTodos` should show the `todo` property
 - [ ] `displayTodos` should show the `isComplete` property
 

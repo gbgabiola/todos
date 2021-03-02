@@ -17,21 +17,21 @@
       { todo: 'Item 3', isComplete: false }
     ];
 
-    console.log(todos);
+    displayTodos();
 
     function add(newTodo) {
       todos.push({ todo: newTodo, isComplete: false });
-      console.log(todos)
+      displayTodos();
     }
 
     function edit(index, newTodoValue) {
       todos[index].todo = newTodoValue;
-      console.log(todos)
+      displayTodos();
     }
 
     function remove(index) {
       todos.splice(index, 1);
-      console.log(todos);
+      displayTodos();
     }
 
     function toggle(index) {
@@ -40,6 +40,11 @@
       } else {
         todos[index].isComplete = false;
       }
+
+      displayTodos();
+    }
+
+    function displayTodos() {
       console.log(todos);
     }
   </script>
