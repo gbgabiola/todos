@@ -1,7 +1,15 @@
 # Requirements
 
 
-## Version
+## Version 6
+
+- [x] It should have a function to toggle all todos
+- [x] If everything is true ==> change everything to false
+- [x] If everything is false ==> change everything to true
+- [x] If mixed ==> change everything to true
+
+
+## Version 5
 
 - [x] It should have a function for displaying todos
 - [x] `displayTodos` should show the `todo` property and `isComplete` property
