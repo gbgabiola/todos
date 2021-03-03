@@ -49,6 +49,26 @@
         console.log(todos[i]);
       }
     }
+
+    function toggleAll() {
+      var completedTodos = 0;
+
+      for (var i = 0; i < todos.length; i++) {
+        if (todos[i].isComplete === true) {
+          completedTodos++;
+        }
+      }
+
+      // if everything is true
+      if (todos.length === completedTodos) {
+        // Change everything to false
+        for (var i = 0; i < todos.length; i++) {
+          todos[i].isComplete = false;
+        }
+      }
+      // else
+      //   Change everything to true
+    }
   </script>
 </body>
 

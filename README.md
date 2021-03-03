@@ -3,9 +3,9 @@
 
 ## Version 6
 
-- [ ] It should have a function to toggle all todos
+- [x] It should have a function to toggle all todos
+- [x] If everything is true ==> change everything to false
 - [ ] If everything is false ==> change everything to true
-- [ ] If everything is true ==> change everything to false
 - [ ] If mixed ==> change everything to true
 
 
