@@ -59,15 +59,17 @@
         }
       }
 
-      // if everything is true
       if (todos.length === completedTodos) {
-        // Change everything to false
         for (var i = 0; i < todos.length; i++) {
           todos[i].isComplete = false;
         }
+      } else {
+        for (var i = 0; i < todos.length; i++) {
+          todos[i].isComplete = true;
+        }
       }
-      // else
-      //   Change everything to true
+
+      displayTodos();
     }
   </script>
 </body>

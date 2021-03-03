@@ -5,8 +5,8 @@
 
 - [x] It should have a function to toggle all todos
 - [x] If everything is true ==> change everything to false
-- [ ] If everything is false ==> change everything to true
-- [ ] If mixed ==> change everything to true
+- [x] If everything is false ==> change everything to true
+- [x] If mixed ==> change everything to true
 
 
 ## Version 5
