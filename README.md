@@ -4,7 +4,9 @@
 ## Version 7
 
 - [x] It should have a displayTodos button
-- [ ] displayTodos button should run displayTodos function
+- [x] displayTodos button should run `displayTodos` function
+- [ ] It should have a toggleAll button
+- [ ] toggleAll button should run `toggleAll` function
 
 ## Version 6
 

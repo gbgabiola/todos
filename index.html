@@ -9,9 +9,7 @@
 </head>
 
 <body>
-  <form action="">
-    <button>Display todos</button>
-  </form>
+  <button id="btn-display">Display todos</button>
 
   <script>
     var todos = [
@@ -74,6 +72,9 @@
 
       displayTodos();
     }
+
+    var btnDisplay = document.getElementById('btn-display');
+    btnDisplay.addEventListener('click', displayTodos);
   </script>
 </body>
 
