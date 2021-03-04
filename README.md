@@ -1,6 +1,11 @@
 # Requirements
 
 
+## Version 7
+
+- [ ] It should have a displayTodos button
+- [ ] displayTodos button should run displayTodos function
+
 ## Version 6
 
 - [x] It should have a function to toggle all todos
