@@ -3,7 +3,7 @@
 
 ## Version 7
 
-- [ ] It should have a displayTodos button
+- [x] It should have a displayTodos button
 - [ ] displayTodos button should run displayTodos function
 
 ## Version 6
