@@ -10,6 +10,7 @@
 
 <body>
   <button id="btn-display">Display todos</button>
+  <button id="btn-toggle-all">Toggle all</button>
 
   <script>
     var todos = [
@@ -75,6 +76,9 @@
 
     var btnDisplay = document.getElementById('btn-display');
     btnDisplay.addEventListener('click', displayTodos);
+
+    var btnToggleAll = document.getElementById('btn-toggle-all');
+    btnToggleAll.addEventListener('click', toggleAll);
   </script>
 </body>
 
