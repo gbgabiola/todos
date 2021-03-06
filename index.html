@@ -11,6 +11,8 @@
 <body>
   <button id="btn-display">Display todos</button>
   <button id="btn-toggle-all">Toggle all</button>
+  <button id="btn-add">Add</button>
+  <input id="add-input" type="text">
 
   <script>
     var todos = [
@@ -21,8 +23,14 @@
 
     displayTodos();
 
-    function add(newTodo) {
+    // function add(newTodo) {
+    //   todos.push({ todo: newTodo, isComplete: false });
+    //   displayTodos();
+    // }
+    function add() {
+      var newTodo = addInput.value;
       todos.push({ todo: newTodo, isComplete: false });
+      addInput.value = '';
       displayTodos();
     }
 
@@ -79,6 +87,11 @@
 
     var btnToggleAll = document.getElementById('btn-toggle-all');
     btnToggleAll.addEventListener('click', toggleAll);
+
+    var btnAdd = document.getElementById('btn-add');
+    btnAdd.addEventListener('click', add);
+
+    var addInput = document.getElementById('add-input');
   </script>
 </body>
 
