@@ -1,6 +1,13 @@
 # Requirements
 
 
+## Version 9
+
+- [x] It should have a `li` for each todo
+- [x] Each `li` should show the `todo` property
+- [x] Each `li` should show the `isComplete` property
+
+
 ## Version 8
 
 - [x] It should have a button for adding a todo
