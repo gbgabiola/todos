@@ -74,6 +74,7 @@
       for (var i = 0; i < todos.length; i++) {
         var todosLi = document.createElement('li');
         console.log(todos[i]);
+        todosLi.innerText = todos[i].todo;
         todosUl.appendChild(todosLi);
       }
     }
