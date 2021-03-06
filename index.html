@@ -9,10 +9,10 @@
 </head>
 
 <body>
-  <button id="btn-display">Display todos</button>
-  <button id="btn-toggle-all">Toggle all</button>
-  <button id="btn-add">Add</button>
-  <input id="add-input" type="text">
+  <button id="displayButton">Display todos</button>
+  <button id="toggleAllButton">Toggle all</button>
+  <button id="addButton">Add</button>
+  <input id="addInput" type="text">
 
   <script>
     var todos = [
@@ -82,16 +82,16 @@
       displayTodos();
     }
 
-    var btnDisplay = document.getElementById('btn-display');
-    btnDisplay.addEventListener('click', displayTodos);
+    var displayButton = document.getElementById('displayButton');
+    displayButton.addEventListener('click', displayTodos);
 
-    var btnToggleAll = document.getElementById('btn-toggle-all');
-    btnToggleAll.addEventListener('click', toggleAll);
+    var toggleAllButton = document.getElementById('toggleAllButton');
+    toggleAllButton.addEventListener('click', toggleAll);
 
-    var btnAdd = document.getElementById('btn-add');
-    btnAdd.addEventListener('click', add);
+    var addButton = document.getElementById('addButton');
+    addButton.addEventListener('click', add);
 
-    var addInput = document.getElementById('add-input');
+    var addInput = document.getElementById('addInput');
   </script>
 </body>
 
