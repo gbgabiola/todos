@@ -4,7 +4,7 @@
 ## Version 8
 
 - [x] It should have a button for adding a todo
-- [ ] It should have a button for editing a todo
+- [x] It should have a button for editing a todo
 - [ ] It should have a button for removing a todo
 - [ ] It should have a button for toggling a todo
 

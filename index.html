@@ -13,6 +13,9 @@
   <button id="toggleAllButton">Toggle all</button>
   <button id="addButton">Add</button>
   <input id="addInput" type="text">
+  <button id="editButton">Edit</button>
+  <input id="editIndexInput" type="text">
+  <input id="editTodoInput" type="text">
 
   <script>
     var todos = [
@@ -23,10 +26,6 @@
 
     displayTodos();
 
-    // function add(newTodo) {
-    //   todos.push({ todo: newTodo, isComplete: false });
-    //   displayTodos();
-    // }
     function add() {
       var newTodo = addInput.value;
       todos.push({ todo: newTodo, isComplete: false });
@@ -34,8 +33,12 @@
       displayTodos();
     }
 
-    function edit(index, newTodoValue) {
+    function edit() {
+      var index = editIndexInput.value;
+      var newTodoValue = editTodoInput.value;
       todos[index].todo = newTodoValue;
+      editIndexInput.value = '';
+      editTodoInput.value = '';
       displayTodos();
     }
 
@@ -89,9 +92,14 @@
     toggleAllButton.addEventListener('click', toggleAll);
 
     var addButton = document.getElementById('addButton');
+    var addInput = document.getElementById('addInput');
     addButton.addEventListener('click', add);
 
-    var addInput = document.getElementById('addInput');
+
+    var editButton = document.getElementById('editButton')
+    var editIndexInput = document.getElementById('editIndexInput');
+    var editTodoInput = document.getElementById('editTodoInput');
+    editButton.addEventListener('click', edit);
   </script>
 </body>
 
