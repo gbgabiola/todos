@@ -9,17 +9,19 @@
 </head>
 
 <body>
-  <button id="displayButton">Display todos</button>
-  <button id="toggleAllButton">Toggle all</button>
-  <button id="addButton">Add</button>
-  <input id="addInput" type="text">
-  <button id="editButton">Edit</button>
-  <input id="editIndexInput" type="text">
-  <input id="editTodoInput" type="text">
-  <button id="removeButton">Remove</button>
-  <input id="removeInput" type="text">
-  <button id="toggleButton">Toggle</button>
-  <input id="toggleInput" type="text">
+  <button id="display-button">Display todos</button>
+  <button id="toggle-all-button">Toggle all</button>
+  <button id="add-button">Add</button>
+  <input id="add-input" type="text">
+  <button id="edit-button">Edit</button>
+  <input id="edit-index-input" type="text">
+  <input id="edit-todo-input" type="text">
+  <button id="remove-button">Remove</button>
+  <input id="remove-input" type="text">
+  <button id="toggle-button">Toggle</button>
+  <input id="toggle-input" type="text">
+
+  <ul id="todos-ul"></ul>
 
   <script>
     var todos = [
@@ -66,6 +68,7 @@
     }
 
     function displayTodos() {
+
       for (var i = 0; i < todos.length; i++) {
         console.log(todos[i]);
       }
@@ -93,28 +96,28 @@
       displayTodos();
     }
 
-    var displayButton = document.getElementById('displayButton');
+    var displayButton = document.getElementById('display-button');
     displayButton.addEventListener('click', displayTodos);
 
-    var toggleAllButton = document.getElementById('toggleAllButton');
+    var toggleAllButton = document.getElementById('toggle-all-button');
     toggleAllButton.addEventListener('click', toggleAll);
 
-    var addButton = document.getElementById('addButton');
-    var addInput = document.getElementById('addInput');
+    var addButton = document.getElementById('add-button');
+    var addInput = document.getElementById('add-input');
     addButton.addEventListener('click', add);
 
 
-    var editButton = document.getElementById('editButton')
-    var editIndexInput = document.getElementById('editIndexInput');
-    var editTodoInput = document.getElementById('editTodoInput');
+    var editButton = document.getElementById('edit-button')
+    var editIndexInput = document.getElementById('edit-index-input');
+    var editTodoInput = document.getElementById('edit-todo-input');
     editButton.addEventListener('click', edit);
 
-    var removeButton = document.getElementById('removeButton');
-    var removeInput = document.getElementById('removeInput');
+    var removeButton = document.getElementById('remove-button');
+    var removeInput = document.getElementById('remove-input');
     removeButton.addEventListener('click', remove);
 
-    var toggleButton = document.getElementById('toggleButton');
-    var toggleInput = document.getElementById('toggleInput');
+    var toggleButton = document.getElementById('toggle-button');
+    var toggleInput = document.getElementById('toggle-input');
     toggleButton.addEventListener('click', toggle);
   </script>
 </body>
