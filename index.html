@@ -18,6 +18,8 @@
   <input id="editTodoInput" type="text">
   <button id="removeButton">Remove</button>
   <input id="removeInput" type="text">
+  <button id="toggleButton">Toggle</button>
+  <input id="toggleInput" type="text">
 
   <script>
     var todos = [
@@ -51,13 +53,15 @@
       displayTodos();
     }
 
-    function toggle(index) {
+    function toggle() {
+      var index = toggleInput.value;
       if (!todos[index].isComplete) {
         todos[index].isComplete = true;
       } else {
         todos[index].isComplete = false;
       }
 
+      toggleInput.value = '';
       displayTodos();
     }
 
@@ -108,6 +112,10 @@
     var removeButton = document.getElementById('removeButton');
     var removeInput = document.getElementById('removeInput');
     removeButton.addEventListener('click', remove);
+
+    var toggleButton = document.getElementById('toggleButton');
+    var toggleInput = document.getElementById('toggleInput');
+    toggleButton.addEventListener('click', toggle);
   </script>
 </body>
 
