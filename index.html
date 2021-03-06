@@ -73,8 +73,13 @@
 
       for (var i = 0; i < todos.length; i++) {
         var todosLi = document.createElement('li');
-        console.log(todos[i]);
-        todosLi.innerText = todos[i].todo;
+
+        if (todos[i].isComplete === true) {
+          todosLi.innerText = '[x] ' + todos[i].todo;
+        } else {
+          todosLi.innerText = '[ ] ' + todos[i].todo;
+        }
+
         todosUl.appendChild(todosLi);
       }
     }

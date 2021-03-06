@@ -5,7 +5,7 @@
 
 - [x] It should have a `li` for each todo
 - [x] Each `li` should show the `todo` property
-- [ ] Each `li` should show the `isComplete` property
+- [x] Each `li` should show the `isComplete` property
 
 
 ## Version 8
