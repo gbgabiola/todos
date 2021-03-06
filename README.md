@@ -3,7 +3,7 @@
 
 ## Version 9
 
-- [ ] It should have a `li` for each todo
+- [x] It should have a `li` for each todo
 
 
 ## Version 8

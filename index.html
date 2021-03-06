@@ -68,9 +68,13 @@
     }
 
     function displayTodos() {
+      var todosUl = document.getElementById('todos-ul');
+      todosUl.innerHTML = '';
 
       for (var i = 0; i < todos.length; i++) {
+        var todosLi = document.createElement('li');
         console.log(todos[i]);
+        todosUl.appendChild(todosLi);
       }
     }
 
@@ -105,7 +109,6 @@
     var addButton = document.getElementById('add-button');
     var addInput = document.getElementById('add-input');
     addButton.addEventListener('click', add);
-
 
     var editButton = document.getElementById('edit-button')
     var editIndexInput = document.getElementById('edit-index-input');
