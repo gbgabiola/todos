@@ -15,8 +15,6 @@
   <button id="edit-button">Edit</button>
   <input id="edit-index-input" type="text">
   <input id="edit-todo-input" type="text">
-  <button id="toggle-button">Toggle</button>
-  <input id="toggle-input" type="text">
 
   <ul id="todos-ul"></ul>
 
@@ -52,15 +50,15 @@
       displayTodos();
     }
 
-    function toggle() {
-      var index = toggleInput.value;
+    function toggle(event) {
+      var index = event.currentTarget.id;
+
       if (!todos[index].isComplete) {
         todos[index].isComplete = true;
       } else {
         todos[index].isComplete = false;
       }
 
-      toggleInput.value = '';
       displayTodos();
     }
 
@@ -83,7 +81,9 @@
         removeButton.addEventListener('click', remove);
 
         var toggleButton = document.createElement('button');
+        toggleButton.id = i;
         toggleButton.innerText = 'Toggle';
+        toggleButton.addEventListener('click', toggle);
 
         todosLi.appendChild(toggleButton);
         todosLi.appendChild(removeButton);
@@ -124,10 +124,6 @@
     var editIndexInput = document.getElementById('edit-index-input');
     var editTodoInput = document.getElementById('edit-todo-input');
     editButton.addEventListener('click', edit);
-
-    var toggleButton = document.getElementById('toggle-button');
-    var toggleInput = document.getElementById('toggle-input');
-    toggleButton.addEventListener('click', toggle);
   </script>
 </body>
 
