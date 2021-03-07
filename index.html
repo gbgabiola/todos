@@ -79,6 +79,9 @@
           todosLi.innerText = '[ ] ' + todos[i].todo;
         }
 
+        var removeButton = document.createElement('button');
+        removeButton.innerText = 'Remove';
+        todosLi.appendChild(removeButton);
         todosUl.appendChild(todosLi);
       }
     }
