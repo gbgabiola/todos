@@ -9,15 +9,12 @@
 </head>
 
 <body>
-  <button id="display-button">Display todos</button>
   <button id="toggle-all-button">Toggle all</button>
   <button id="add-button">Add</button>
   <input id="add-input" type="text">
   <button id="edit-button">Edit</button>
   <input id="edit-index-input" type="text">
   <input id="edit-todo-input" type="text">
-  <button id="remove-button">Remove</button>
-  <input id="remove-input" type="text">
   <button id="toggle-button">Toggle</button>
   <input id="toggle-input" type="text">
 
@@ -48,10 +45,10 @@
       displayTodos();
     }
 
-    function remove() {
-      var index = removeInput.value;
+    function remove(event) {
+      var index = event.currentTarget.id;
       todos.splice(index, 1);
-      removeInput.value = '';
+
       displayTodos();
     }
 
@@ -80,6 +77,12 @@
           todosLi.innerText = '[ ] ' + todos[i].todo;
         }
 
+        var removeButton = document.createElement('button');
+        removeButton.innerText = 'Remove';
+        removeButton.id = i;
+        removeButton.addEventListener('click', remove);
+
+        todosLi.appendChild(removeButton);
         todosUl.appendChild(todosLi);
       }
     }
@@ -106,9 +109,6 @@
       displayTodos();
     }
 
-    var displayButton = document.getElementById('display-button');
-    displayButton.addEventListener('click', displayTodos);
-
     var toggleAllButton = document.getElementById('toggle-all-button');
     toggleAllButton.addEventListener('click', toggleAll);
 
@@ -120,10 +120,6 @@
     var editIndexInput = document.getElementById('edit-index-input');
     var editTodoInput = document.getElementById('edit-todo-input');
     editButton.addEventListener('click', edit);
-
-    var removeButton = document.getElementById('remove-button');
-    var removeInput = document.getElementById('remove-input');
-    removeButton.addEventListener('click', remove);
 
     var toggleButton = document.getElementById('toggle-button');
     var toggleInput = document.getElementById('toggle-input');
