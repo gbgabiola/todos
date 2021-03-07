@@ -46,7 +46,7 @@
     }
 
     function remove(event) {
-      var index = event.target.id;
+      var index = event.currentTarget.id;
       todos.splice(index, 1);
 
       displayTodos();
