@@ -4,7 +4,7 @@
 ## Version 10
 
 - [x] Each todo should have its own remove button
-- [ ] Remove buttons should work
+- [x] Remove buttons should work
 
 
 ## Version 9
