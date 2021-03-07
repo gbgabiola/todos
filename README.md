@@ -1,6 +1,12 @@
 # Requirements
 
 
+## Version 11
+
+- [ ] Each todo should have its own toggle button
+- [ ] Toggle buttons should work
+
+
 ## Version 10
 
 - [x] Each todo should have its own remove button
