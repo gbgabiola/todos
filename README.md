@@ -3,7 +3,7 @@
 
 ## Version 11
 
-- [ ] Each todo should have its own toggle button
+- [x] Each todo should have its own toggle button
 - [ ] Toggle buttons should work
 
 

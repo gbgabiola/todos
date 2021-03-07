@@ -82,6 +82,10 @@
         removeButton.id = i;
         removeButton.addEventListener('click', remove);
 
+        var toggleButton = document.createElement('button');
+        toggleButton.innerText = 'Toggle';
+
+        todosLi.appendChild(toggleButton);
         todosLi.appendChild(removeButton);
         todosUl.appendChild(todosLi);
       }
