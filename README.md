@@ -1,6 +1,12 @@
 # Requirements
 
 
+## Version 10
+
+- [ ] Each todo should have its own remove button
+- [ ] Remove buttons should work
+
+
 ## Version 9
 
 - [x] It should have a `li` for each todo
