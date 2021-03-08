@@ -1,6 +1,12 @@
 # Requirements
 
 
+## Version 12
+
+- [ ] Each todo should have its own edit button
+- [ ] Edit buttons should work
+
+
 ## Version 11
 
 - [x] Each todo should have its own toggle button
