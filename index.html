@@ -76,17 +76,23 @@
           todosLi.innerText = '[ ] ' + todos[i].todo;
         }
 
-        var removeButton = document.createElement('button');
-        removeButton.innerText = 'Remove';
-        removeButton.id = 'remove-' + i;
-        removeButton.addEventListener('click', remove);
-
         var toggleButton = document.createElement('button');
         toggleButton.id = 'toggle-' + i;
         toggleButton.innerText = 'Toggle';
         toggleButton.addEventListener('click', toggle);
 
+        var editButton = document.createElement('button');
+        editButton.innerText = 'Edit';
+        editButton.id = 'edit-' + i;
+        // editButton.addEventListener('click', edit);
+
+        var removeButton = document.createElement('button');
+        removeButton.innerText = 'Remove';
+        removeButton.id = 'remove-' + i;
+        removeButton.addEventListener('click', remove);
+
         todosLi.appendChild(toggleButton);
+        todosLi.appendChild(editButton);
         todosLi.appendChild(removeButton);
         todosUl.appendChild(todosLi);
       }

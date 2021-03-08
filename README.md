@@ -3,7 +3,7 @@
 
 ## Version 12
 
-- [ ] Each todo should have its own edit button
+- [x] Each todo should have its own edit button
 - [ ] Edit buttons should work
 
 
