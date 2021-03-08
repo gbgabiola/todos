@@ -44,14 +44,15 @@
     }
 
     function remove(event) {
-      var index = event.currentTarget.id;
+      var index = event.currentTarget.id.split('-')[1];
       todos.splice(index, 1);
 
       displayTodos();
     }
 
     function toggle(event) {
-      var index = event.currentTarget.id;
+      var index = event.currentTarget.id.split('-')[1];
+      console.log(index);
 
       if (!todos[index].isComplete) {
         todos[index].isComplete = true;
@@ -77,11 +78,11 @@
 
         var removeButton = document.createElement('button');
         removeButton.innerText = 'Remove';
-        removeButton.id = i;
+        removeButton.id = 'remove-' + i;
         removeButton.addEventListener('click', remove);
 
         var toggleButton = document.createElement('button');
-        toggleButton.id = i;
+        toggleButton.id = 'toggle-' + i;
         toggleButton.innerText = 'Toggle';
         toggleButton.addEventListener('click', toggle);
 
