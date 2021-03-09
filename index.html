@@ -34,7 +34,13 @@
     function edit(event) {
       var index = event.currentTarget.id.split('-')[1];
       var newTodoValue = prompt();
-      todos[index].todo = newTodoValue;
+
+      if (newTodoValue === null || newTodoValue === '') {
+        todos[index].todo;
+      } else {
+        todos[index].todo = newTodoValue;
+      }
+
       displayTodos();
     }
 
