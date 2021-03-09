@@ -1,6 +1,14 @@
 # Requirements
 
 
+## Version 12
+
+- [x] Each todo should have its own edit button
+- [x] Edit buttons should work
+- [x] Clicking cancel should do nothing
+- [x] Clicking Ok if the field is empty should do nothing
+
+
 ## Version 11
 
 - [x] Each todo should have its own toggle button

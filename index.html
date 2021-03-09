@@ -12,9 +12,6 @@
   <button id="toggle-all-button">Toggle all</button>
   <button id="add-button">Add</button>
   <input id="add-input" type="text">
-  <button id="edit-button">Edit</button>
-  <input id="edit-index-input" type="text">
-  <input id="edit-todo-input" type="text">
 
   <ul id="todos-ul"></ul>
 
@@ -34,12 +31,14 @@
       displayTodos();
     }
 
-    function edit() {
-      var index = editIndexInput.value;
-      var newTodoValue = editTodoInput.value;
-      todos[index].todo = newTodoValue;
-      editIndexInput.value = '';
-      editTodoInput.value = '';
+    function edit(event) {
+      var index = event.currentTarget.id.split('-')[1];
+      var newTodoValue = prompt('Edit ' + todos[index].todo + '?');
+
+      if (newTodoValue !== null && newTodoValue !== '') {
+        todos[index].todo = newTodoValue;
+      }
+
       displayTodos();
     }
 
@@ -52,7 +51,6 @@
 
     function toggle(event) {
       var index = event.currentTarget.id.split('-')[1];
-      console.log(index);
 
       if (!todos[index].isComplete) {
         todos[index].isComplete = true;
@@ -76,17 +74,23 @@
           todosLi.innerText = '[ ] ' + todos[i].todo;
         }
 
-        var removeButton = document.createElement('button');
-        removeButton.innerText = 'Remove';
-        removeButton.id = 'remove-' + i;
-        removeButton.addEventListener('click', remove);
-
         var toggleButton = document.createElement('button');
         toggleButton.id = 'toggle-' + i;
         toggleButton.innerText = 'Toggle';
         toggleButton.addEventListener('click', toggle);
 
+        var editButton = document.createElement('button');
+        editButton.innerText = 'Edit';
+        editButton.id = 'edit-' + i;
+        editButton.addEventListener('click', edit);
+
+        var removeButton = document.createElement('button');
+        removeButton.innerText = 'Remove';
+        removeButton.id = 'remove-' + i;
+        removeButton.addEventListener('click', remove);
+
         todosLi.appendChild(toggleButton);
+        todosLi.appendChild(editButton);
         todosLi.appendChild(removeButton);
         todosUl.appendChild(todosLi);
       }
@@ -120,11 +124,6 @@
     var addButton = document.getElementById('add-button');
     var addInput = document.getElementById('add-input');
     addButton.addEventListener('click', add);
-
-    var editButton = document.getElementById('edit-button')
-    var editIndexInput = document.getElementById('edit-index-input');
-    var editTodoInput = document.getElementById('edit-todo-input');
-    editButton.addEventListener('click', edit);
   </script>
 </body>
 
