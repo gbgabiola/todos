@@ -33,7 +33,7 @@
 
     function edit(event) {
       var index = event.currentTarget.id.split('-')[1];
-      var newTodoValue = prompt();
+      var newTodoValue = prompt('Edit ' + todos[index].todo + '?');
 
       if (newTodoValue !== null && newTodoValue !== '') {
         todos[index].todo = newTodoValue;
