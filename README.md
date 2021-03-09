@@ -4,7 +4,9 @@
 ## Version 12
 
 - [x] Each todo should have its own edit button
-- [ ] Edit buttons should work
+- [x] Edit buttons should work
+- [ ] Clicking cancel should do nothing
+- [ ] Clicking Ok if the field is empty should do nothing
 
 
 ## Version 11
