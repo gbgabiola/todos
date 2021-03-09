@@ -35,9 +35,7 @@
       var index = event.currentTarget.id.split('-')[1];
       var newTodoValue = prompt();
 
-      if (newTodoValue === null || newTodoValue === '') {
-        todos[index].todo;
-      } else {
+      if (newTodoValue !== null && newTodoValue !== '') {
         todos[index].todo = newTodoValue;
       }
 
